@@ -2,41 +2,33 @@
 <html lang="fr">
 <head>
 	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
 	<title>Site perso de Beatrice Moulin Beltrame</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="shortcut icon" type="image/x-icon" href="">
 
 </head>
 <body>
 	<div id="page">
-	<header class="header navbar-fixed-top">
-	  <!-- Navbar -->
-		<nav class="navbar">
-	    	<div class="container">
-          	<!-- Brand and toggle get grouped for better mobile display -->
-	        	<div class="menu-container js_nav-item">
-	        	</div>
-	          	<!-- HAMBURGUER MENU ICON -->
-	          	<input type="checkbox" name="toggle" id="toggle"/>
-	          	<label for="navbar-toggle"></label>
-	          	<!-- Collect the nav links, forms, and other content for toggling -->
-	          	<div class="menu-mobile">
-	              	<div class="collapse navbar-collapse nav-collapse ">
-	                  	<div class="menu-container">
-                      		<ul class="nav navbar-nav container-right ">
-	                          <li class="js_nav-item nav-item"><a class="nav-item-child" href="#">Accueil</a></li>
-	                          <li class="js_nav-item nav-item"><a class="nav-item-child" href="#competences">Competences</a></li>
-	                          <li class="js_nav-item nav-item"><a class="nav-item-child" href="#portfolio">Portfolio</a></li>
-	                          <li class="js_nav-item nav-item"><a class="nav-item-child" href="#experiences">Experiences</a></li>
-	                          <li class="js_nav-item nav-item"><a class="nav-item-child" href="#formations">Formations</a></li>
-	                          <li class="js_nav-item nav-item"><a class="nav-item-child" href="#contact">Contact</a></li>
-		                    </ul>
-		                </div>
-		            </div>
-				</div>
-			</div>
-		</nav>
-	</header>
+	<header class="main-header">
+        <nav class="main-navigation">
+            <div class="nav-wrapper">
+                <p class="site-title">Béatrice Moulin Beltrame</p>
+                <input type="checkbox" id="menu-checkbox" class="menu-checkbox">
+				<label for="menu-checkbox" class="menu-toggle">&equiv; Menu</label>
+                <ul class="menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html#competences">Competences</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#experiences">Experiences</a></li>
+                    <li><a href="index.html#formations">Formations</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div> 
+        </nav>
+    </header>
+
+
 	<main>
 		<section id="principale">
 			<!-- <div class="photo"></div> -->
@@ -70,9 +62,9 @@
 					<p>B</p>
 				</div>
 				<div class="social">
-					<a href="#"><img src="images/facebook.png" alt="logo facebook"></a>
-					<a href="#"><img src="images/twitter.png" alt="logo twitter"></a>
-					<a href="#"><img src="images/linkedin.png" alt="logo Linkedin"></a>
+					<a href="https://fr-fr.facebook.com/beatrice.moulin.161"><img src="images/facebook.png" alt="logo facebook" target="_blank"></a>
+					<a href="https://twitter.com/beamb14"><img src="images/twitter.png" alt="logo twitter"></a>
+					<a href="https://www.linkedin.com/in/béatrice-moulin-beltrame"><img src="images/linkedin.png" alt="logo Linkedin"></a>
 				</div>
 			</div>
 		</section>
@@ -81,63 +73,58 @@
 			<h3>Informatique</h3>
 			<div class="comp">
 				<div class="progressBar">
-				<p><span class="p75">Joomla 75%</span></p>
+				<p><span class="p75">Joomla</span></p>
 				</div>
 			</div>
 			<div class="comp">
 				<div class="progressBar">
-				<p><span class="p70">Wordpress 70%</span></p>
+				<p><span class="p70">Wordpress, Wix, Shopify</span></p>
 				</div>
 			</div>
 			<div class="comp">
 				<div class="progressBar">
-				<p><span class="p70">Wix 70%</span></p>
+				<p><span class="p90">HTML & CSS</span></p>
 				</div>
 			</div>
 			<div class="comp">
 				<div class="progressBar">
-				<p><span class="p90">HTML & CSS 90%</span></p>
+				<p><span class="p60">Javascript</span></p>
 				</div>
 			</div>
 			<div class="comp">
 				<div class="progressBar">
-				<p><span class="p60">Javascript 60%</span></p>
+				<p><span class="p50">PHP</span></p>
 				</div>
 			</div>
 			<div class="comp">
 				<div class="progressBar">
-				<p><span class="p50">PHP 50%</span></p>
+				<p><span class="p90">Bureautique</span></p>
 				</div>
 			</div>
 			<div class="comp">
 				<div class="progressBar">
-				<p><span class="p90">Bureautique 90%</span></p>
+				<p><span class="p60">UML</span></p>
 				</div>
 			</div>
 			<div class="comp">
 				<div class="progressBar">
-				<p><span class="p60">UML 60%</span></p>
-				</div>
-			</div>
-			<div class="comp">
-				<div class="progressBar">
-				<p><span class="p60">Referencement 60%</span></p>
+				<p><span class="p60">Referencement</span></p>
 				</div>
 			</div>
 			<h3>Autres compétences</h3>
 			<div class="comp">
 				<div class="progressBar">
-				<p><span class="p60">Ergonomie 60%</span></p>
+				<p><span class="p60">Ergonomie</span></p>
 				</div>
 			</div>
 			<div class="comp">
 				<div class="progressBar">
-				<p><span class="p60">Accessibilité web 60%</span></p>
+				<p><span class="p60">Accessibilité web</span></p>
 				</div>
 			</div>
 			<div class="comp">
 				<div class="progressBar">
-				<p><span class="p60">Methode agile 60%</span></p>
+				<p><span class="p60">Methode agile</span></p>
 				</div>
 			</div>
 			<div class="comp">
@@ -425,7 +412,7 @@ création du site Internet de l'association sous Joomla, maintenance  du site en
 					<p>Spectrométrie de diffusion Raman - Application à LiNbO3 et d'autres oxydes modèles</p>
 				</div>
 			</div>
-			<p><span class="button">FORMATIONS</span></p>
+			<p><a href="Formations.html" alt="lien vers formations"><span class="button">VOIR TOUTES LES FORMATIONS</span></a></p>
 		</section>
 		<section id="centresinteret">
 			<h2>05 Centres d'Intérêt</h2>
@@ -507,9 +494,9 @@ création du site Internet de l'association sous Joomla, maintenance  du site en
                 </div>
 			</div>
 			<div class="social">
-					<a href="#"><img src="images/facebook.png" alt="logo facebook"></a>
-					<a href="#"><img src="images/twitter.png" alt="logo twitter"></a>
-					<a href="#"><img src="images/linkedin.png" alt="logo Linkedin"></a>
+					<a href="https://fr-fr.facebook.com/beatrice.moulin.161"><img src="images/facebook.png" alt="logo facebook" target="_blank"></a>
+					<a href="https://twitter.com/beamb14"><img src="images/twitter.png" alt="logo twitter"></a>
+					<a href="https://www.linkedin.com/in/béatrice-moulin-beltrame"><img src="images/linkedin.png" alt="logo Linkedin"></a>
 			</div>
 		</section>
 	</main>

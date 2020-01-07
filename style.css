@@ -282,21 +282,25 @@ margin-bottom: 10px;
 #info {
 	background-color : ghostwhite;
 	flex: 0 0 20%;
+	border-radius: 10px;
 }
 
 #autres {
 	background-color:  ghostwhite;
 	flex: 0 0 20%;
+	border-radius: 10px;
 }
 
 #langues {
 	background-color:  ghostwhite;
 	flex: 0 0 20%;
+	border-radius: 10px;
 }
 
 #perso {
 	background-color: ghostwhite;
 	flex: 0 0 20%;
+	border-radius: 10px;
 }
 
 .comp {
@@ -487,28 +491,42 @@ margin-bottom: 10px;
 	opacity: .75;
 }
 
-.gridportfolio {
-	list-style: none;
-	padding: .5em;
-	display: grid; /* grille*/
-	grid-auto-flow: row; /*distribution auto*/
-	grid-template-columns: 1fr; /* une seule colonne si pas de media queries*/
+#portfolio h2, #portfolio h3 {
+	flex: 4 0 100%;
+	text-align: center;
+	margin-bottom: 10px;
+	}
+
+.gallery {
+	margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 1rem;
 }
 
-.gridportfolio-item {
-	margin: .5em;
+.gallery-item{
+	margin: 1rem;
+	position: relative;
 }
 
-.gridportfolio-item:first-of-type {
-	grid-area: 1 / 1 / span 2 / span 2; /* prend la place de deux elements dans chaque direction*/
-}
-
-.gridportfolio-item img {
+.gallery-item img {
 	display: block;
-	height: auto;
 	max-width: 100%;
-	margin:0 auto;
-	opacity: 1;
+}
+
+.gallery-item-legend {
+	position: absolute;
+	margin-top:-50px;
+	background-color: black;
+	color: white;
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	opacity:0;
+}
+
+.gallery-item-legend:hover {
+	opacity: 0.75;
+	transition-delay: 0.2s;
 }
 
 
@@ -521,41 +539,47 @@ margin-bottom: 10px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	opacity: .55;*/
+	background-color: #f1f2f6;
+	display: flex;
+	flex-flow: row wrap;
+	margin-bottom: 10px;
+}
+
+#experiences h2 {
+	flex: 4 0 100%;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.xp {
+	background-color : ghostwhite;
+	flex: 0 0 40%;
+	border-radius: 10px;
 }
 
 .exp {
 	display: flex;
 	flex-flow: row wrap;
-	border-bottom: 1px solid #bbb;
 	padding-bottom: 10px;
 	margin-bottom: 10px;
 }
 
-.explogo {
-	flex: 0 0 25%;
-	max-width: 100px;
-}
-
 .expinfo {
-	display: flex;
-	flex-flow: column wrap;
-	flex: 0 0 70%;
+	flex: 0 0 100%;
 	margin-left: auto;
-}
-
-.exp img {
-	width: 100%;
+	display: block;
 }
 
 .exp h3 {
 	font-size: 1.2em;
+	/*display: block;*/
 }
 
 .exp h4 {
 	font-size: 1em;
 	font-weight: normal;
+	/*display: block;*/
 }
-
 
 /*****************************/
 /*********FORMATIONS*********/
@@ -715,23 +739,17 @@ footer p {
 
 /*****************************/
 
-@media (min-width: 400px) {
-	.gridportfolio {
-		grid-template-columns: 1fr 1fr;
+@media screen and (min-width: 600px) {
+	.gallery {
+	  display: flex;
+	  flex-wrap: wrap;
+	  flex-direction: row;
 	}
-}
+	.gallery-item {
+	  width: calc(50% - 2rem);
+	}
+  }
 
-@media (min-width: 600px) {
-	.gridportfolio {
-		grid-template-columns: 1fr 1fr 1fr;
-	}
-}
-
-@media (min-width: 800px) {
-	.gridportfolio {
-		grid-template-columns: 1fr 1fr 1fr 1fr;
-	}
-}
 
 @media (min-width: 1000px) {
 	section {
@@ -770,8 +788,8 @@ footer p {
 		box-shadow: 0px 0px 20px #666;
 	}
 
-	.gridportfolio {
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	.gallery-item {
+	  width: calc(100% / 3 - 2rem);
 	}
 
 	.explogo, .formatlogo {
@@ -785,18 +803,6 @@ footer p {
 
 	#centresinteret {
 		flex: 0 1 25%;
-	}
-}
-
-@media (min-width: 1200px) {
-	.gridportfolio {
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-	}
-}
-
-@media (min-width: 1400px) {
-	.gridportfolio {
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	}
 }
 

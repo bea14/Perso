@@ -520,6 +520,7 @@ margin-bottom: 10px;
 	color: white;
 	height: 50px;
 	width: 100%;
+	max-width: 100%;
 	text-align: center;
 	opacity:0;
 }
@@ -593,35 +594,54 @@ margin-bottom: 10px;
 	background-color: #f1f2f6;
 }
 
-.format {
+#formations h2 {
+	flex: 4 0 100%;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.form-button {
+	flex: 4 0 100%;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.form {
+	flex: 0 0 30%;
+	margin-bottom: 20px;
 	display: flex;
 	flex-flow: row wrap;
-	border-bottom: 1px solid #bbb;
 	padding-bottom: 10px;
 	margin-bottom: 10px;
 }
 
-.formatlogo {
-	flex: 0 0 25%;
-	max-width: 100px;
+.entete {
+	flex: 0 0 100%;
+	/*margin-left: auto;*/
+	display: block;
 }
 
-.formatinfo {
-	display: flex;
-	flex-flow: column wrap;
-	flex: 0 0 70%;
-	margin-left: auto;
+.icon {
+	position: relative;
+	text-align: center;
+	display: inline-block;
 }
 
-.format img {
-	width: 100%;
-}
-
-.format h3 {
+.entete h3 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
 	font-size: 1.2em;
 }
 
-.format h4 {
+.content-title h3 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.entete h4 {
 	font-size: 1em;
 	font-weight: normal;
 }

@@ -228,7 +228,7 @@ article {
 	text-align:center;
 	width: 45%;
 	background-color : ghostwhite;
-
+	border-radius: 5px;
 }
 
 .photo {
@@ -262,11 +262,6 @@ article {
 /*********COMPETENCES*********/
 /*****************************/
 #competences {
-	/*background-image: url('images/code-2620118_1920.jpg');
-	background-attachment: fixed; 
-	background-repeat: no-repeat;
-	background-size: cover;
-	opacity: .75;*/
 	background-color: #f1f2f6;
 	display: flex;
 	flex-flow: row wrap;
@@ -313,7 +308,6 @@ margin-bottom: 10px;
 	flex: 0 0 90%;
 	height: 1.5em;
 	width: 300px;
-	/*position: relative;*/
 	background-color: #191919;
 	-moz-border-radius: 16px;
 	-webkit-border-radius: 16px;
@@ -324,7 +318,7 @@ margin-bottom: 10px;
 	margin-bottom: 10px;
 }
 
-.progressBar span, .progressBar2 span {
+.progressBar span {
 	display: block;
 	height: 100%;
 	padding-left: 5px;
@@ -483,19 +477,11 @@ margin-bottom: 10px;
 /**********PORTFOLIO**********/
 /*****************************/
 
-#portfolio {
-	background-image: url('images/landscape-559434_1920.jpg');
-	background-attachment: fixed; 
-	background-repeat: no-repeat;
-	background-size: cover;
-	opacity: .75;
-}
-
 #portfolio h2, #portfolio h3 {
 	flex: 4 0 100%;
 	text-align: center;
 	margin-bottom: 10px;
-	}
+}
 
 .gallery {
 	margin: 0 auto;
@@ -535,62 +521,53 @@ margin-bottom: 10px;
 /*********EXPERIENCES*********/
 /*****************************/
 #experiences {
-	/*background-image: url('images/salt-harvesting-3060093_1920.jpg');
-	background-attachment: fixed; 
-	background-repeat: no-repeat;
-	background-size: cover;
-	opacity: .55;*/
 	background-color: #f1f2f6;
 	display: flex;
 	flex-flow: row wrap;
 	margin-bottom: 10px;
 }
 
-#experiences h2 {
+#experiences h2, #experiences h3 {
 	flex: 4 0 100%;
 	text-align: center;
 	margin-bottom: 10px;
 }
 
-.xp {
-	background-color : ghostwhite;
-	flex: 0 0 40%;
+.gridpexperiences {
+	list-style: none;
+	padding: .5em;
+	display: grid; /* grille*/
+	grid-auto-flow: row; /*distribution auto*/
+	grid-template-columns: 1fr; /* une seule colonne si pas de media queries*/
+    grid-gap: 20px;
+    gap: 20px; /* gouttière */
+    justify-content: center; /* centrage des colonnes */
+    margin:5px 0 20px 0;
+    padding:0 20px;
+}
+
+.gridpexperiences-item {
+	margin: .5em;
+	background-color: ghostwhite;
 	border-radius: 10px;
+	box-shadow: 0px 0px 10px #bbb;
+	text-align: center;
 }
 
-.exp {
-	display: flex;
-	flex-flow: row wrap;
-	padding-bottom: 10px;
-	margin-bottom: 10px;
+.gridpexperiences-item h3 {
+	margin-top: 10px;
 }
 
-.expinfo {
-	flex: 0 0 100%;
-	margin-left: auto;
-	display: block;
-}
-
-.exp h3 {
-	font-size: 1.2em;
-	/*display: block;*/
-}
-
-.exp h4 {
-	font-size: 1em;
-	font-weight: normal;
-	/*display: block;*/
+.gridpexperiences-item-description {
+	text-align: left;
+	padding-top: 20px;
+	padding-left: 10px;
 }
 
 /*****************************/
 /*********FORMATIONS*********/
 /*****************************/
 #formations {
-	/*background-image: url('images/code-2620118_1920.jpg');
-	background-attachment: fixed; 
-	background-repeat: no-repeat;
-	background-size: cover;
-	opacity: .75;*/
 	background-color: #f1f2f6;
 }
 
@@ -613,39 +590,31 @@ margin-bottom: 10px;
 	flex-flow: row wrap;
 	padding-bottom: 10px;
 	margin-bottom: 10px;
-}
-
-.entete {
-	flex: 0 0 100%;
-	/*margin-left: auto;*/
-	display: block;
+	background-color: ghostwhite;
+	border-radius: 10px;
 }
 
 .icon {
 	position: relative;
 	text-align: center;
-	display: inline-block;
 }
 
-.entete h3 {
+.icon figcaption {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	text-align: center;
-	font-size: 1.2em;
+	font-weight: bold;
 }
 
-.content-title h3 {
+.content h3 {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	text-align: center;
-	font-size: 1.2em;
 }
 
-.entete h4 {
-	font-size: 1em;
-	font-weight: normal;
+.content-content {
+	text-align: center;
 }
-
 
 
 /********************************/
@@ -789,9 +758,6 @@ footer p {
 		border-bottom: none;
 		border-right: 2px solid #ccc;
 		padding-right: 20px;
-	}
-
-	#principale {
 		padding-left: 20px;
 		margin-right: auto;
 	}
@@ -804,7 +770,6 @@ footer p {
 	#principale a:hover {
 		color: #1a1a44;
 		background-color:#fff;
-		/*border: 2px solid rgba(28, 37, 212, 1);*/
 		box-shadow: 0px 0px 20px #666;
 	}
 
@@ -812,10 +777,7 @@ footer p {
 	  width: calc(100% / 3 - 2rem);
 	}
 
-	.explogo, .formatlogo {
-		flex: 0 0 10%;
-	}
-
+	
 	.expinfo, .expdescription, .formatinfo, .formatdescription {
 		flex: 0 0 85%;
 		margin-left: auto;

@@ -420,13 +420,13 @@
 					<p>Si vous souhaitez me contacter, vous pouvez utiliser ce formulaire de contact ou me contacter directement : beatrice.moulinbeltrame at gmail.com<br /> Tel: 06 27 09 92 00</p>
 				</div>
 				<div class="formcontact">
-					<form action="#" method="post">
+					<form action="mailto:beatrice.moulinbeltrame@gmail.com" method="post" enctype="text/plain" >
 						<div class="row">
       						<div class="col-25">
                         		<label for="fnom">Nom & prénom</label>
                         	</div>
       						<div class="col-75">
-                        		<input type="text" id="fnom" name="fnom" placeholder="Votre nom et prénom">
+                        		<input type="text" id="fnom" name="fnom" placeholder="Votre nom et prénom" required>
                         	</div>
     					</div>
     					<div class="row">
@@ -442,7 +442,7 @@
                         		<label for="emailAddress">Email</label>
                         	</div>
       						<div class="col-75">
-                        		<input id="emailAddress" type="email" name="email" placeholder="Votre email">
+                        		<input id="emailAddress" type="email" name="email" placeholder="Votre email" required>
                         	</div>
     					</div>
     					<div class="row">
@@ -457,6 +457,7 @@
                         		<input type="submit" value="Envoyer">
                         </div>
                     </form>
+                    
                 </div>
 			</div>
 			<div class="social">

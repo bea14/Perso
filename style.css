@@ -87,6 +87,11 @@ main  {
 	
 }
 
+.site-title a, .site-title a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
 .button {
 	display: inline-block;
 	height: 100%;

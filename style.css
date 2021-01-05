@@ -29,7 +29,7 @@ body {
 
 
 body >* {
-	/*flex: 100%;*/
+	flex: 100%;
 }
 
 p {
